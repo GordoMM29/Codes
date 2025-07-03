@@ -1,0 +1,9 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: use JS for create a new note in the page.
+    activate server
+    server-->>browser: use notes.push(note) and render the notes list
+    deactivate server
+    
