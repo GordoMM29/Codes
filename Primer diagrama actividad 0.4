@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: create a new note in the page.
+    activate server
+    server-->>browser: the server regreat the new note in the page.
+    deactivate server
