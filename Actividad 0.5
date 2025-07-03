@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: the user enter enters the page.
+    activate server
+    server-->>browser: the page show the complete list of notes.
+    deactivate server
